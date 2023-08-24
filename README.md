@@ -1,9 +1,13 @@
 # INSTRUCTION
+## Clone TVM
+```
+git clone --recursive https://github.com/eamicheal/tvmcloned020822 tvm
+
+```
 ## INSTALL Dependency PACKAGES FOR TVM
 ```
 cp -a /package_installation.sh/. /home/xilinx/package_installation.sh
 chmod +x package_installation.sh
-# sudo ./package_installation.sh
 ./package_installation.sh
 
 ```
