@@ -1,10 +1,10 @@
 # INSTRUCTION
-## Clone TVM
+## A. Clone TVM
 ```
 git clone --recursive https://github.com/eamicheal/tvmcloned020822 tvm
 
 ```
-## INSTALL Dependency PACKAGES FOR TVM
+## B. INSTALL Dependency PACKAGES FOR TVM
 ```
 cp -a /package_installation.sh/. /home/xilinx/package_installation.sh
 chmod +x package_installation.sh
@@ -12,7 +12,7 @@ chmod +x package_installation.sh
 
 ```
 
-## MAKE TVM FOR CPU SIM Environment
+## C. MAKE TVM FOR CPU SIM Environment
 1. prepare for make
 ```
 cd tvm/
@@ -37,7 +37,7 @@ make -j2
 
 4. Export 7 Variables (in the terminal and in ~/.bashrc) for standard install location:
 
-## set TVM Environment
+## D. Set TVM Environment
 ```
 nano .bashrc
 
@@ -61,7 +61,7 @@ cd tvm/
 cd python; python3 setup.py install --user; cd ..
 ```
    
-## INSTALL PACKAGES FOR THE NN Environment
+## E. INSTALL PACKAGES FOR THE NN Environment
 ```
 cp -a /package_installation1.sh/. /home/xilinx/package_installation1.sh
 chmod +x package_installation1.sh
