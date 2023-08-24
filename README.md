@@ -36,8 +36,6 @@ make -j2
 
 
 4. Export 7 Variables (in the terminal and in ~/.bashrc) for standard install location:
-
-## D. Set TVM Environment
 ```
 nano .bashrc
 
@@ -61,8 +59,9 @@ cd tvm/
 cd python; python3 setup.py install --user; cd ..
 ```
    
-## E. INSTALL PACKAGES FOR THE NN Environment
+## D. INSTALL PACKAGES FOR THE NN Environment in ROOT Directory
 ```
+$ su
 cp -a /package_installation1.sh/. /home/xilinx/package_installation1.sh
 chmod +x package_installation1.sh
 sudo ./package_installation1.sh
