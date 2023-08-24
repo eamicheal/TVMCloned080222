@@ -26,7 +26,7 @@ nano build/config.cmake
 • set(USE_VTA_FSIM ON)
 • set(USE_VTA_FPGA OFF)
 
-3. To use the CMAKE builder, make TVM (Process takes about 5 hours)
+3. To use the CMAKE builder, make TVM (Process takes about 5 hours on AARCH64)
 ```
 export TVM_LOG_DEBUG=1
 cd build
@@ -37,7 +37,7 @@ make -j2
 
 4. Export 7 Variables (in the terminal and in ~/.bashrc) for standard install location:
 
-## INSTALL PACKAGES FOR THE NN Environment
+## set TVM Environment
 ```
 nano .bashrc
 
