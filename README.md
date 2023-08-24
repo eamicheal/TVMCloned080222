@@ -38,15 +38,14 @@ make -j2
 nano .bashrc
 
 ```
+1. export TVM_HOME=/home/xilinx/tvm
+2. export TVM_PATH=/home/xilinx/tvm
+3. export PYTHONPATH=$TVM_HOME/python:${PYTHONPATH}
+4. export VTA_HW_PATH=$TVM_PATH/3rdparty/vta-hw
+5. export PYTHONPATH=/home/xilinx/tvm/vta/python:${PYTHONPATH}
 
-export TVM_HOME=/home/xilinx/tvm
-export TVM_PATH=/home/xilinx/tvm
-export PYTHONPATH=$TVM_HOME/python:${PYTHONPATH}
-export VTA_HW_PATH=$TVM_PATH/3rdparty/vta-hw
-export PYTHONPATH=/home/xilinx/tvm/vta/python:${PYTHONPATH}
-
-export PYTHONPATH=/home/xilinx/.local/bin:${PYTHONPATH}
-export PATH=$PATH:/home/xilinx/.local/bin
+6. export PYTHONPATH=/home/xilinx/.local/bin:${PYTHONPATH}
+7. export PATH=$PATH:/home/xilinx/.local/bin
 
 ```
 source .bashrc
